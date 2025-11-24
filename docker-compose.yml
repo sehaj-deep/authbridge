@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  openldap:
+    image: osixia/openldap:1.5.0
+    container_name: authbridge-ldap
+    environment:
+      LDAP_ORGANISATION: "AuthBridge Corp"
+      LDAP_DOMAIN: "authbridge.com"
+      LDAP_ADMIN_PASSWORD: "admin"
+      LDAP_CONFIG_PASSWORD: "config"
+      LDAP_TLS: "false"
+    ports:
+      - "389:389"
+      - "636:636"
+    networks:
+      - authbridge-network
+
+networks:
+  authbridge-network:
+    driver: bridge

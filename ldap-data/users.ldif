@@ -1,0 +1,49 @@
+# Organizational Unit for Users
+dn: ou=users,dc=authbridge,dc=com
+objectClass: organizationalUnit
+ou: users
+
+# User: John Doe
+dn: uid=john,ou=users,dc=authbridge,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: john
+cn: John Doe
+sn: Doe
+givenName: John
+mail: john.doe@authbridge.com
+userPassword: password123
+uidNumber: 10001
+gidNumber: 10001
+homeDirectory: /home/john
+
+# User: Jane Smith
+dn: uid=jane,ou=users,dc=authbridge,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: jane
+cn: Jane Smith
+sn: Smith
+givenName: Jane
+mail: jane.smith@authbridge.com
+userPassword: password123
+uidNumber: 10002
+gidNumber: 10002
+homeDirectory: /home/jane
+
+# User: Bob Johnson (Admin)
+dn: uid=bob,ou=users,dc=authbridge,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: bob
+cn: Bob Johnson
+sn: Johnson
+givenName: Bob
+mail: bob.johnson@authbridge.com
+userPassword: admin123
+uidNumber: 10003
+gidNumber: 10003
+homeDirectory: /home/bob

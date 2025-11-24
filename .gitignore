@@ -1,0 +1,30 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# Eclipse
+.settings/
+.classpath
+.project
+.metadata
+
+# IntelliJ
+.idea/
+*.iml
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# H2 Database
+*.db
+*.trace.db
+
+# Application
+application-local.properties
